@@ -1,10 +1,12 @@
 import React from 'react';
-import CountUp from 'react-countup';
+import { Outlet } from 'react-router-dom';
+import Navbar from './Components/Navbar/Navbar';
 
 const App = () => {
   return (
     <div>
-      <h1 className='text-primary m-5 p-1'>App</h1>
+      <Navbar/>
+      <Outlet/>
     </div>
   )
 }
