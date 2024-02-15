@@ -34,6 +34,9 @@ header{
 .menu-hidden{
     display: none;
 }
+.nav-scroll{
+    background-color: black;
+}
 
 .nav-right-menu{
     position: fixed;

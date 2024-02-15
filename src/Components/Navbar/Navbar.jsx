@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo/logo.png';
 import './Navbar.css';
@@ -7,8 +7,16 @@ import { MdOutlineCancel } from "react-icons/md";
 
 const Navbar = () => {
   const [menu,setMenu] = useState(true);
+  const [navColor,setNavColor] = useState(false);
+  useEffect(()=>{
+    window.addEventListener("scroll",()=>{
+      if(window.screenY>200){
+        setNavColor(true);
+      }
+    })
+  },[])
   return (
-    <header>
+    <header className={navColor?"nav-scroll":""}>
       <div className='nav-left'>
         {/* Logo Are */}
         <div className="log">

@@ -9,11 +9,11 @@ const title = (
   <h2 className='title'>Search Your One From <span>Thousend</span> of Product</h2>
 );
 const description = "We have the largest collection of the products";
-const bannerList = [
-  { iconName: "icofont-users-alt-4", text: "1.5 Million Customers" },
-  { iconName: "icofont-notification", text: "More then 2000 Marchent" },
-  { iconName: "icofont-globe", text: "Buy Anything Online" }
-]
+// // const bannerList = [
+// //   { iconName: "icofont-users-alt-4", text: "1.5 Million Customers" },
+//   { iconName: "icofont-notification", text: "More then 2000 Marchent" },
+//   { iconName: "icofont-globe", text: "Buy Anything Online" }
+// ]
 
 const Banner = () => {
   const [searchInput, setSearchInput] = useState("");
